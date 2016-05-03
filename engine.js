@@ -6,3 +6,5 @@ function mainLoop(socialMood, section, budget, mileStone){
 function greeting(){
 	alert("Hello");
 }
+
+var section = {eduction:$1000,argriculture:$1222}
