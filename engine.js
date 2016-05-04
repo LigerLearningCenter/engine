@@ -16,9 +16,7 @@ var socialMood = {
 var sectors = ["industry", "agriculture", "consumerServices", "infrastructure", "education", "tourism", "ecology"];
 var mileStone = {
     industry: {
-        initCoefficient: 1.10,
         coefficientEffect: 0,
-        finalCoefficient: 1.10,
         coefficientList: [ //this is the list of coefficientEffect for every mileStone level
             [1.10, 0, 0, 0, 0, 0, 0],
             [1.60, 0.2, 0, -0.1, 0.1, 0, -0.1],
@@ -35,9 +33,7 @@ var mileStone = {
         level: 0
     },
     agriculture: {
-        initCoefficient: 1.10,
         coefficientEffect: 0,
-        finalCoefficient: 1.10,
         coefficientList: [ //this is the list of coefficientEffect for every mileStone level
             [0, 1.1, 0, 0, 0, 0, 0],
             [0, 1.1, 0, 0, 0, 0, 0],
@@ -54,9 +50,7 @@ var mileStone = {
         level: 0
     },
     consumerServices: {
-        initCoefficient: 1.10,
         coefficientEffect: 0,
-        finalCoefficient: 1.10,
         coefficientList: [ //this is the list of coefficientEffect for every mileStone level
             [0, 0, 1.10, 0, 0, 0, 0],
             [0.1, 0, 1.10, 0, 0, 0, 0],
@@ -73,9 +67,7 @@ var mileStone = {
         level: 0
     },
     infrastructure: {
-        initCoefficient: 1.10,
         coefficientEffect: 0,
-        finalCoefficient: 1.10,
         coefficientList: [ //this is the list of coefficientEffect for every mileStone level
             [0, 0, 0, 1.10, 0, 0, 0],
             [0.3, 0.3, 0, 1.00, 0, 0.2, 0],
@@ -92,9 +84,7 @@ var mileStone = {
         level: 0
     },
     education: {
-        initCoefficient: 1.10,
         coefficientEffect: 0,
-        finalCoefficient: 1.10,
         coefficientList: [ //this is the list of coefficientEffect for every mileStone level
             [0, 0, 0, 0, 1.10, 0, 0],
             [0.1, 0, 0, 0, 1.10, 0, 0.1],
@@ -111,9 +101,7 @@ var mileStone = {
         level: 0
     },
     tourism: {
-        initCoefficient: 1.10,
         coefficientEffect: 0,
-        finalCoefficient: 1.10,
         coefficientList: [ //this is the list of coefficientEffect for every mileStone level
             [0, 0, 0, 0, 0, 1.10, 0],
             [0.2, 0, 0.1, 0.1, 0, 1.60, 0],
@@ -130,9 +118,7 @@ var mileStone = {
         level: 0
     },
     ecology: {
-        initCoefficient: 1.10,
         coefficientEffect: 0,
-        finalCoefficient: 1.10,
         coefficientList: [ //this is the list of coefficientEffect for every mileStone level
             [0, 0, 0, 0, 0, 0, 1.10],
             [0, 0.3, 0, 0, 0.1, 0.3, 1.10],
@@ -158,14 +144,9 @@ var mileStone = {
         }
         return;
     }
+
 };
 //**These is the structure of the object of mileStone**//
-
-increaseMileStoneLevel("agriculture");
-increaseMileStoneLevel("agriculture");
-increaseMileStoneLevel("agriculture");
-increaseMileStoneLevel("agriculture");
-
 
 //var mileStone = {
 //		  industry: {
