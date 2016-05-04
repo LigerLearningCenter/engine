@@ -1,10 +1,5 @@
-var section ={};//the 7 sections is created inside object *section* as object
+var sectors ={};//the 7 sectors is created inside object *sectors* as object
 var initBudget = 2000;//start up budget
-function mainLoop(socialMood, section, budget, mileStone){
+function mainLoop(socialMood, sectors, budget, mileStone){
 	//This loop will run every 4.2 seconds
 }
-function greeting(){
-	alert("Hello");
-}
-
-var section = {eduction:$1000,argriculture:$1222}
