@@ -5,10 +5,10 @@ function mainLoop(socialMood, sectors, budget, mileStone){
 }
 
 function increaseMileStoneLevel (name){
-	mileStoneLevel[name] += 1; 
+
 }
 
-function mileStoneEffect(sectors){
+function mileStoneEffect(){
 
 }
 
@@ -22,21 +22,55 @@ var socialMood = {
 	tourism:100,
 	ecology:100
 };
-var mileStoneLevel = {
-	industry:0,
-	agriculture:0,
-	consumerServices:0,
-	infrastructure:0,
-	education:0,
-	tourism:0,
-	ecology:0
+
+var mileStone = {
+	industry:{
+		initCoefficient:1.10,
+		coefficientEffect:0,
+		finalCoefficient:1.10,
+		level:0
+		},
+	agriculture:{
+		initCoefficient:1.10,
+		coefficientEffect:0,
+		finalCoefficient:1.10,
+		level:0
+		},
+	consumerServices:{
+		initCoefficient:1.10,
+		coefficientEffect:0,
+		finalCoefficient:1.10,
+		level:0
+		},
+	infrastructure:{
+		initCoefficient:1.10,
+		coefficientEffect:0,
+		finalCoefficient:1.10,
+		level:0
+		},
+	education:{
+		initCoefficient:1.10,
+		coefficientEffect:0,
+		finalCoefficient:1.10,
+		level:0
+		},
+	tourism:{
+		initCoefficient:1.10,
+		coefficientEffect:0,
+		finalCoefficient:1.10,
+		level:0
+		},
+	ecology:{
+		initCoefficient:1.10,
+		coefficientEffect:0,
+		finalCoefficient:1.10,
+		level:0
+		},
 };
-var coefficient = {
-	industry:1.10,
-	agriculture:1.10,
-	consumerServices:1.10,
-	infrastructure:1.10,
-	education:1.10,
-	tourism:1.10,
-	ecology:1.10
-};
+//**These is the structure of the object of mileStone**//
+//ecology:{
+//		initCoefficient:1.10,
+//		coefficientEffect:0,
+//		finalCoefficient:1.10,
+//		level:0
+//		},
