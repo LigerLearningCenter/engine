@@ -5,13 +5,10 @@ function mainLoop(socialMood, sectors, budget, mileStone){
 }
 
 function increaseMileStoneLevel (name){
-
+	mileStone[name].level += 1;
+	mileStone.update();
+	return;
 }
-
-function mileStoneEffect(){
-
-}
-
 //***************************************************************************************************//
 var socialMood = {
 	industry:100,
@@ -28,6 +25,7 @@ var mileStone = {
 		initCoefficient:1.10,
 		coefficientEffect:0,
 		finalCoefficient:1.10,
+		coefficientList:,
 		level:0
 		},
 	agriculture:{
@@ -66,11 +64,20 @@ var mileStone = {
 		finalCoefficient:1.10,
 		level:0
 		},
+	update:function(){
+		for(){
+
+		}
+		return;
+	}
 };
 //**These is the structure of the object of mileStone**//
-//ecology:{
-//		initCoefficient:1.10,
-//		coefficientEffect:0,
-//		finalCoefficient:1.10,
-//		level:0
+
+//var mileStone = {
+//		ecology:{
+//			initCoefficient:1.10,
+//			coefficientEffect:0,
+//			finalCoefficient:1.10,
+//			level:0
 //		},
+//};
