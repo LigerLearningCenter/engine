@@ -1,9 +1,5 @@
-function increaseMileStoneLevel(name) {
-    mileStone[name].level += 1;
-    mileStone.update();
-    return;
-}
 //***************************************************************************************************//
+//randomEvents of socialMood
 var socialMood = {
     industry: 100,
     agriculture: 100,
@@ -13,7 +9,12 @@ var socialMood = {
     tourism: 100,
     ecology: 100
 };
+var randomEvents = []; //the data team will have this **we can access it with the code ||EX. RI01.discription or RI01.industry.effect
+
+//mileStone
+//use mileStone.increaseMileStoneLevel('industry'); - This will also update the new coefficient
 var sectors = ["industry", "agriculture", "consumerServices", "infrastructure", "education", "tourism", "ecology"];
+
 var mileStone = {
     industry: {
         coefficientEffect: 0,
@@ -143,16 +144,20 @@ var mileStone = {
             console.log(sectors[i] + " is " + this[sectors[i]].coefficientEffect);
         }
         return;
+    },
+    increaseMileStoneLevel: function(name) {
+        this[name].level += 1;
+        this.update();
+        return;
     }
 
 };
-//**These is the structure of the object of mileStone**//
+//
+//**This is the structure of the object of mileStone**//
 
 //var mileStone = {
 //		  industry: {
-//        	initCoefficient: 1.10,
 //       	 	coefficientEffect: 0,
-//        	finalCoefficient: 1.10,
 //        	coefficientList: [
 //            [1.10, 0, 0, 0, 0, 0, 0],
 //            [1.60, 0.2, 0, -0.1, 0.1, 0, -0.1],
