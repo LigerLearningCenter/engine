@@ -9,4 +9,14 @@
 [1.40,0,0.3,0.2,0.3,-0.1,-0.1],
 [1.30,-0.1,0.2,0.2,0.3,0,0],
 [1.20,-0.1,0.1,0.3,0.3,0,0],
-[1.10,-0.2,0.1,0.3,0.3,0.1,0]]
+[1.10,-0.2,0.1,0.3,0.3,0.1,0]
+]
+
+for (i = 0; i < mileStone.industry.coefficientList.length; i++) {
+    console.log(mileStone.industry.coefficientList[i].length);
+}
+function mainLoop(socialMood, sectors, budget, mileStone) {
+    //This loop will run every 4.2 seconds
+    //It will set new budget, reset the money in different sectors
+    //Calculate
+}
