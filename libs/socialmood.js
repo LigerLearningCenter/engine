@@ -1,4 +1,10 @@
 //randomEvents of socialMood
+//Write a function that pick a random event in the list
+//Calculate it's effect on socialMood
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
 var socialMood = {
     industry: 100,
     agriculture: 100,
@@ -8,4 +14,5 @@ var socialMood = {
     tourism: 100,
     ecology: 100
 };
-var randomEvents = []; //the data team will have this **we can access it with the code ||EX. RI01.discription or RI01.industry.effect
+
+//the data team will have this **we can access it with the code ||EX. randomEvents[0].ind.RI01.money.industry or randomEvents[0].ind.RI01.description or randomEvents[0].ind.RI01.socialMood.industry
