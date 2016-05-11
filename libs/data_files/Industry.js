@@ -1,4 +1,3 @@
-//industry sector
 randomEvents[0].industry.RI01 = new Events("More jobs in clothing industry", [0.02, -0.02, 0.02, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0]);
 randomEvents[0].industry.RI02 = new Events("Layoffs in clothing industry", [-0.02, 0, 0, 0, 0, 0, 0], [-1, 0, 0, 0, 0, 0, 0]);
 randomEvents[0].industry.RI03 = new Events("Export of clothes increases", [0.06, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]);
