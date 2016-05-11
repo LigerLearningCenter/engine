@@ -24,4 +24,4 @@ var randomEvents = []; //the data team will have this **we can access it with th
 =======
 
 //the data team will have this **we can access it with the code ||EX. randomEvents[0].ind.RI01.money.industry or randomEvents[0].ind.RI01.description or randomEvents[0].ind.RI01.socialMood.industry
->>>>>>> 8661fd1dd35e35940013423b7343a70883d143cd
+>>>>>>> asjfkadskferakcdfkade
