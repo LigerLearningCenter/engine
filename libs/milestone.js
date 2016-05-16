@@ -1,7 +1,5 @@
 //mileStone
 //use mileStone.increaseMileStoneLevel('industry'); - This will also update the new coefficient
-var sectors = ["industry", "agriculture", "consumerServices", "infrastructure", "education", "tourism", "ecology"];
-
 var mileStone = {
     industry: {
         coefficientEffect: 0,
