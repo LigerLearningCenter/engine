@@ -6,4 +6,6 @@ function loop(){
   //Money laying on the last unbuilt milestone in each sector is deducted,
   //multiplied by sector’s effectiveness and returned to player’s budget
   checkUnbuiltMilestone();//this will set the money array
-}
+  //Calculating Milestones’ progress 
+  calculateMilestone();
+} 
