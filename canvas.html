@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<canvas id="canvas" width="5" height="5" style="border: 1px solid white;"></canvas>
+	<script type="text/javascript">
+	const RED = 0;
+	const GREEN = 1;
+	const BLUE = 2;
+	const ALPHA = 3;
+
+		var canvas = document.getElementById('canvas');
+		var ctx = canvas.getContext("2d");
+		var imageData = ctx.getImageData(0,0,5,5);
+		console.log(imageData);
+		var data = imageData.data;
+		function selectXY (x, y, width, color){
+			return 4 * (y * width + x) + color;
+		}
+		data[0] = 255.0;
+		data[1] = 0.0;
+		data[2] = 0.0;
+		data[3] = 255.0;
+		ctx.putImageData(data, 0, 0);
+		// data[selectXY(1, 3, 5, 0)] = 0.0;
+		// data[selectXY(1, 3, 5, 1)] = 0.0;
+		// data[selectXY(1, 3, 5, 2)] = 255.0;
+		// data[selectXY(1, 3, 5, 3)] = 255.0;
+	</script>
+
+</body>
+</html>
